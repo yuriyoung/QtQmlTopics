@@ -45,6 +45,7 @@ ApplicationWindow {
             property bool squared: true
             property int rulerSize: 12
             property color rulerColor: "steelblue"
+            property int minimum: 50
 
             border {
                 width: 2
@@ -76,8 +77,8 @@ ApplicationWindow {
                     "left" : function(x, y) {
                         selectionRect.width = selectionRect.width - x
                         selectionRect.x = selectionRect.x + x
-                        if(selectionRect.width < 50)
-                            selectionRect.width = 50
+                        if(selectionRect.width < minimum)
+                            selectionRect.width = minimum
 
                         if(squared) {
                             selectionRect.height = selectionRect.width
@@ -85,8 +86,8 @@ ApplicationWindow {
                     },
                     "right" : function(x, y) {
                         selectionRect.width = selectionRect.width + x
-                        if(selectionRect.width < 50)
-                            selectionRect.width = 50
+                        if(selectionRect.width < minimum)
+                            selectionRect.width = minimum
 
                         if(squared) {
                             selectionRect.height = selectionRect.width
@@ -95,8 +96,8 @@ ApplicationWindow {
                     "top" : function(x, y) {
                         selectionRect.height = selectionRect.height - y
                         selectionRect.y = selectionRect.y + y
-                        if(selectionRect.height < 50)
-                            selectionRect.height = 50
+                        if(selectionRect.height < minimum)
+                            selectionRect.height = minimum
 
                         if(squared) {
                             selectionRect.width = selectionRect.height
@@ -104,8 +105,8 @@ ApplicationWindow {
                     },
                     "bottom" : function(x, y) {
                         selectionRect.height = selectionRect.height + y
-                        if(selectionRect.height < 50)
-                            selectionRect.height = 50
+                        if(selectionRect.height < minimum)
+                            selectionRect.height = minimum
 
                         if(squared) {
                             selectionRect.width = selectionRect.height
