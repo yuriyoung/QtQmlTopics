@@ -19,7 +19,7 @@ ApplicationWindow {
     Image {
         id: image
         anchors.fill: parent
-        source: "file:///Users/macai/Pictures/fc162db24ae39ab3d12273b22d7f1f8c.jpg"
+        source: "file:///demo.jpg" // change a valid url
 
         MouseArea {
             anchors.fill: parent
