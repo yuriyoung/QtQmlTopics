@@ -1,5 +1,6 @@
 ## 可自由缩放Rectangle的边，拖拽选择裁剪的图片范围。
 - demo:
+
 ![demo](/resources/resizable-borders-rectangle.gif)
 
 ```qml
