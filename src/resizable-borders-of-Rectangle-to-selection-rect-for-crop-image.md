@@ -160,7 +160,7 @@ ApplicationWindow {
                     MouseArea {
                         anchors.fill: parent
                         drag{ target: parent; axis: modelData.axis }
-                        onMouseXChanged: {
+                        onPositionChanged: {
                             if(drag.active) {
                                 if(typeof repeater. actions[modelData.callback] === "function")
                                     repeater.actions[modelData.callback](mouseX, mouseY)
