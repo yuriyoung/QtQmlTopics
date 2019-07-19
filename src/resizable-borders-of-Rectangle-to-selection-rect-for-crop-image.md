@@ -19,7 +19,7 @@ ApplicationWindow {
     Image {
         id: image
         anchors.fill: parent
-        source: "file:///demo.jpg" // change a valid url
+        source: "file:///demo.jpg" // change to a valid url
 
         MouseArea {
             anchors.fill: parent
