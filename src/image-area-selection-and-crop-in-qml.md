@@ -235,7 +235,7 @@ Dialog {
     } // viewport
 }
 ```
-3. 建立一个c++图片帮助类ImageHelper，增加一个裁剪函数`crop`，非常简单，只传入一个图片文件名和一个裁剪的大小作为参数。并使用qmlRegisterSingletonType`注册单例对象到QML。
+3. 建立一个c++图片帮助类ImageHelper，增加一个裁剪函数`crop`，非常简单，只传入一个图片文件名和一个裁剪的大小作为参数。并使用`qmlRegisterSingletonType`注册单例对象到QML。
 ```c++
 // ImageHelper.h
 #ifndef IMAGEHELPER_H
@@ -346,7 +346,7 @@ ApplicationWindow {
             var croppedFile = ImageHelper.crop(source, selectedRect);
             // apply crop result
             source = Qt.resolvedUrl(croppedFile);
-            image.source = croppedFile;
+            image.source = source;
         }
         onAccepted: {
             // show result
