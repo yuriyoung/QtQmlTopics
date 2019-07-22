@@ -6,4 +6,4 @@
 :warning:QML只针对Qt Quick 2版本。
 
 ## 打赏
-![weixin](./resources/wechat_collect_qrcode.png = 200x200)
+![weixin](./resources/wechat_collect_qrcode.png)
