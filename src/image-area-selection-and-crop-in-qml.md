@@ -320,8 +320,6 @@ ApplicationWindow {
     height: 480
     visible: true
 
-    property var selection: undefined
-
     // select a image from disk
     FileDialog {
         id: appImagesSelectDialog
