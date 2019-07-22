@@ -4,3 +4,6 @@
 查看[文章目录](./src)
 
 :warning:QML只针对Qt Quick 2版本。
+
+## 打赏
+![weixin](./resources/wechat_collect_qrcode.png.png)
