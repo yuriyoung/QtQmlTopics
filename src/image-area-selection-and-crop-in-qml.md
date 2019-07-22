@@ -346,7 +346,6 @@ ApplicationWindow {
             var croppedFile = ImageHelper.crop(source, selectedRect);
             // apply crop result
             source = Qt.resolvedUrl(croppedFile);
-            image.source = source;
         }
         onAccepted: {
             // show result
