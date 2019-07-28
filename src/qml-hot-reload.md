@@ -16,9 +16,9 @@ class QmlListener : public QObject
     Q_DECLARE_PRIVATE(QmlListener)
     QScopedPointer<QmlListenerPrivate> const d_ptr;
 public:
-    QmlListener(QObject *parent = nullptr);
-    explicit QmlListener(QQuickView *view, QObject *parent = nullptr);
-    explicit QmlListener(QQmlApplicationEngine *engine, QObject *parent = nullptr);
+    explicit QmlListener(QObject *parent = nullptr);
+    QmlListener(QQuickView *view, QObject *parent = nullptr);
+    QmlListener(QQmlApplicationEngine *engine, QObject *parent = nullptr);
 
 signals:
 
