@@ -1,7 +1,7 @@
 ## QML热加载
 通过c++端侦听qml文件实时刷新界面而无须重新运行应用程序。
 ### demo:
-    ![image](./resources/qml-hot-reload.gif)
+    ![image](/resources/qml-hot-reload.gif)
 
 ### code:
 ```c++
