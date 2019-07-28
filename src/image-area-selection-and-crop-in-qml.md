@@ -280,7 +280,7 @@ public:
             tempDir.mkdir(QStringLiteral("temp"));
             tempDir.cd(QStringLiteral("temp"));
         }
-        // not suffix
+        // no suffix
         QString name = tempDir.path() + "/" + QString(md5.toHex());
         cropped.save(name, "PNG");
         resultUrl = QUrl::fromLocalFile(name);
