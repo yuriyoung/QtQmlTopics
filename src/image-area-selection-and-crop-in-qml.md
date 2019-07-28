@@ -311,7 +311,7 @@ qmlRegisterSingletonType<ImageHelper>("App", 1, 0, "ImageHelper",
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Dialogs 1.3
-import App 1.0
+import App 1.0 // !!import module
 
 ApplicationWindow {
     id: appWindow
