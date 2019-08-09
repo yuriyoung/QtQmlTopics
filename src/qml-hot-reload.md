@@ -55,7 +55,7 @@ public slots:
 
 class QmlListenerPrivate
 {
-    Q_DECLARE_PUBLIC(QmlListenerPrivate)
+    Q_DECLARE_PUBLIC(QmlListener)
     QmlListener *q_ptr;
 public:
     QmlListenerPrivate(QmlListener *parent);
