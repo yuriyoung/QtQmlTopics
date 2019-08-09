@@ -2,6 +2,7 @@
 通过c++端侦听qml文件实时刷新界面而无须重新运行应用程序。
 ### demo:
 ![demo](https://github.com/yuriyoung/QtQmlTopics/blob/master/resources/qml-hot-reload.gif)
+PS: 当前代码直接在github编辑器上编辑的，尚未在本地IDE上编辑，可能会有个别地方编辑有误，有空再补充。
 
 ### code:
 * QmlListener.h
