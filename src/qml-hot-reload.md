@@ -18,7 +18,7 @@ class QmlListener : public QObject
     Q_DECLARE_PRIVATE(QmlListener)
     QScopedPointer<QmlListenerPrivate> const d_ptr;
 public:
-    explicit QmlListener(const QString mainQml = QString(), QObject *parent = nullptr);
+    explicit QmlListener(const QString &mainQml = QString(), QObject *parent = nullptr);
     ~QmlListener();
     
     void setIndexQml(const QString &qmlFile);
