@@ -10,6 +10,10 @@
 #ifndef QMLLISTENER_H
 #define QMLLISTENER_H
 
+#include <QObject>
+
+class QQuickView;
+class QQmlApplicationEngine;
 class QmlListenerPrivate;
 class QmlListener : public QObject
 {
@@ -40,6 +44,15 @@ public slots:
 * QmlListener.cpp
 
 ```c++
+#include "QmlListener.h"
+
+#include <QFileSystemWatcher>
+#include <QQmlApplicationEngine>
+#include <QQmlEngine>
+#include <QQuickView>
+#include <QQmlContext>
+#include <QQmlComponent>
+
 class QmlListenerPrivate
 {
     Q_DECLARE_PUBLIC(QmlListenerPrivate)
@@ -151,12 +164,12 @@ void QmlListener::reload(const QString &file)
 * main.cpp
 
 ```c++
+#include "QmlListener.h"
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QDir>
 #include <QDirIterator>
-
-#include "QmlListener.h"
 
 static const QString UI_PATH = "path/to/your/project/qml";
 
