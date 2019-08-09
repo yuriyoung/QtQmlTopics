@@ -71,7 +71,7 @@ QmlListenerPrivate::watching()
     const QString basePath = engine ? engine->baseUrl().toString() : view->engine()->baseUrl().toString();
     watcher->addPath(basePath);
     watcher->addPath(mainQml);
-    QObject::connect(m_watcher, &QFileSystemWatcher::fileChanged, q, &QmlListener::reload);
+    QObject::connect(watcher, &QFileSystemWatcher::fileChanged, q, &QmlListener::reload);
 }
 
 QmlListener::QmlListener(const QString mainQml, QObject *parent)
