@@ -27,7 +27,7 @@ public:
     void listen(QQmlApplicationEngine *engine);
     
     void addPaths(const QStringList &paths);
-    void appendPath(const QString &path);
+    void addPath(const QString &path);
     
 signals:
 
@@ -115,7 +115,7 @@ void QmlListener::addPaths(const QStringList &paths)
     d->watcher->addPaths(paths);
 }
 
-void QmlListener::appendPath(const QString &path)
+void QmlListener::addPath(const QString &path)
 {
     Q_D(QmlListener);
     d->watcher->addPath(path);
